@@ -59,6 +59,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
+		
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_nokiafc22_ttf);
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_monsterrat_ttf);
 		
@@ -68,14 +70,18 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		#if flash
 		
-		className.set ("assets/data/data-goes-here.txt", __ASSET__assets_data_data_goes_here_txt);
-		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
+		className.set ("assets/data/test_map.tmx", __ASSET__assets_data_test_map_tmx);
+		type.set ("assets/data/test_map.tmx", AssetType.TEXT);
+		className.set ("assets/data/tiles.tsx", __ASSET__assets_data_tiles_tsx);
+		type.set ("assets/data/tiles.tsx", AssetType.TEXT);
 		className.set ("assets/images/bundt.aseprite", __ASSET__assets_images_bundt_aseprite);
 		type.set ("assets/images/bundt.aseprite", AssetType.BINARY);
 		className.set ("assets/images/bundt.png", __ASSET__assets_images_bundt_png);
 		type.set ("assets/images/bundt.png", AssetType.IMAGE);
-		className.set ("assets/images/images-go-here.txt", __ASSET__assets_images_images_go_here_txt);
-		type.set ("assets/images/images-go-here.txt", AssetType.TEXT);
+		className.set ("assets/images/tiles.aseprite", __ASSET__assets_images_tiles_aseprite);
+		type.set ("assets/images/tiles.aseprite", AssetType.BINARY);
+		className.set ("assets/images/tiles.png", __ASSET__assets_images_tiles_png);
+		type.set ("assets/images/tiles.png", AssetType.IMAGE);
 		className.set ("assets/music/music-goes-here.txt", __ASSET__assets_music_music_goes_here_txt);
 		type.set ("assets/music/music-goes-here.txt", AssetType.TEXT);
 		className.set ("assets/sounds/sounds-go-here.txt", __ASSET__assets_sounds_sounds_go_here_txt);
@@ -97,7 +103,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 		#elseif html5
 		
 		var id;
-		id = "assets/data/data-goes-here.txt";
+		id = "assets/data/test_map.tmx";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/data/tiles.tsx";
 		path.set (id, id);
 		
 		type.set (id, AssetType.TEXT);
@@ -109,10 +119,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/images-go-here.txt";
+		id = "assets/images/tiles.aseprite";
 		path.set (id, id);
 		
-		type.set (id, AssetType.TEXT);
+		type.set (id, AssetType.BINARY);
+		id = "assets/images/tiles.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
 		id = "assets/music/music-goes-here.txt";
 		path.set (id, id);
 		
@@ -163,8 +177,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		var useManifest = false;
 		
-		className.set ("assets/data/data-goes-here.txt", __ASSET__assets_data_data_goes_here_txt);
-		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
+		className.set ("assets/data/test_map.tmx", __ASSET__assets_data_test_map_tmx);
+		type.set ("assets/data/test_map.tmx", AssetType.TEXT);
+		
+		className.set ("assets/data/tiles.tsx", __ASSET__assets_data_tiles_tsx);
+		type.set ("assets/data/tiles.tsx", AssetType.TEXT);
 		
 		className.set ("assets/images/bundt.aseprite", __ASSET__assets_images_bundt_aseprite);
 		type.set ("assets/images/bundt.aseprite", AssetType.BINARY);
@@ -172,8 +189,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/images/bundt.png", __ASSET__assets_images_bundt_png);
 		type.set ("assets/images/bundt.png", AssetType.IMAGE);
 		
-		className.set ("assets/images/images-go-here.txt", __ASSET__assets_images_images_go_here_txt);
-		type.set ("assets/images/images-go-here.txt", AssetType.TEXT);
+		className.set ("assets/images/tiles.aseprite", __ASSET__assets_images_tiles_aseprite);
+		type.set ("assets/images/tiles.aseprite", AssetType.BINARY);
+		
+		className.set ("assets/images/tiles.png", __ASSET__assets_images_tiles_png);
+		type.set ("assets/images/tiles.png", AssetType.IMAGE);
 		
 		className.set ("assets/music/music-goes-here.txt", __ASSET__assets_music_music_goes_here_txt);
 		type.set ("assets/music/music-goes-here.txt", AssetType.TEXT);
@@ -843,10 +863,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 #if !display
 #if flash
 
-@:keep @:bind #if display private #end class __ASSET__assets_data_data_goes_here_txt extends flash.utils.ByteArray { }
+@:keep @:bind #if display private #end class __ASSET__assets_data_test_map_tmx extends flash.utils.ByteArray { }
+@:keep @:bind #if display private #end class __ASSET__assets_data_tiles_tsx extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__assets_images_bundt_aseprite extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__assets_images_bundt_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_images_go_here_txt extends flash.utils.ByteArray { }
+@:keep @:bind #if display private #end class __ASSET__assets_images_tiles_aseprite extends flash.utils.ByteArray { }
+@:keep @:bind #if display private #end class __ASSET__assets_images_tiles_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_music_music_goes_here_txt extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__assets_sounds_sounds_go_here_txt extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_beep_mp3 extends flash.media.Sound { }
@@ -858,6 +880,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 #elseif html5
+
+
 
 
 
@@ -880,10 +904,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 #if (windows || mac || linux || cpp)
 
 
-@:file("assets/data/data-goes-here.txt") #if display private #end class __ASSET__assets_data_data_goes_here_txt extends lime.utils.Bytes {}
+@:file("assets/data/test_map.tmx") #if display private #end class __ASSET__assets_data_test_map_tmx extends lime.utils.Bytes {}
+@:file("assets/data/tiles.tsx") #if display private #end class __ASSET__assets_data_tiles_tsx extends lime.utils.Bytes {}
 @:file("assets/images/bundt.aseprite") #if display private #end class __ASSET__assets_images_bundt_aseprite extends lime.utils.Bytes {}
 @:image("assets/images/bundt.png") #if display private #end class __ASSET__assets_images_bundt_png extends lime.graphics.Image {}
-@:file("assets/images/images-go-here.txt") #if display private #end class __ASSET__assets_images_images_go_here_txt extends lime.utils.Bytes {}
+@:file("assets/images/tiles.aseprite") #if display private #end class __ASSET__assets_images_tiles_aseprite extends lime.utils.Bytes {}
+@:image("assets/images/tiles.png") #if display private #end class __ASSET__assets_images_tiles_png extends lime.graphics.Image {}
 @:file("assets/music/music-goes-here.txt") #if display private #end class __ASSET__assets_music_music_goes_here_txt extends lime.utils.Bytes {}
 @:file("assets/sounds/sounds-go-here.txt") #if display private #end class __ASSET__assets_sounds_sounds_go_here_txt extends lime.utils.Bytes {}
 @:file("C:/HaxeToolkit/haxe/lib/flixel/4,3,0/assets/sounds/beep.mp3") #if display private #end class __ASSET__flixel_sounds_beep_mp3 extends lime.utils.Bytes {}

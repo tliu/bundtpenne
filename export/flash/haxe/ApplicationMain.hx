@@ -30,7 +30,11 @@ class ApplicationMain {
 		var types = [];
 		
 		
-		urls.push ("assets/data/data-goes-here.txt");
+		urls.push ("assets/data/test_map.tmx");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("assets/data/tiles.tsx");
 		types.push (lime.Assets.AssetType.TEXT);
 		
 		
@@ -42,8 +46,12 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/images-go-here.txt");
-		types.push (lime.Assets.AssetType.TEXT);
+		urls.push ("assets/images/tiles.aseprite");
+		types.push (lime.Assets.AssetType.BINARY);
+		
+		
+		urls.push ("assets/images/tiles.png");
+		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
 		urls.push ("assets/music/music-goes-here.txt");
@@ -139,7 +147,7 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "26",
+			build: "77",
 			company: "HaxeFlixel",
 			file: "bundtpenne",
 			fps: 60,
@@ -157,13 +165,13 @@ class ApplicationMain {
 					display: 0,
 					fullscreen: false,
 					hardware: true,
-					height: 480,
+					height: 720,
 					parameters: "{}",
 					resizable: true,
 					stencilBuffer: true,
 					title: "bundtpenne",
 					vsync: true,
-					width: 640,
+					width: 1280,
 					x: null,
 					y: null
 				},
@@ -181,7 +189,7 @@ class ApplicationMain {
 		
 		#if (js && html5)
 		#if (munit || utest)
-		openfl.Lib.embed (null, 640, 480, "000000");
+		openfl.Lib.embed (null, 1280, 720, "000000");
 		#end
 		#else
 		create ();
