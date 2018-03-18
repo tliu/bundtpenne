@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="2,5,0" type="Haxe">
+    <CLASSES>
+      <root url="file://C:/HaxeToolkit/haxe/lib/flixel-addons/2,5,0" />
+      <root url="file://C:/HaxeToolkit/haxe/lib/flixel-ui/2,2,0" />
+      <root url="file://C:/HaxeToolkit/haxe/lib/flixel/4,3,0" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://C:/HaxeToolkit/haxe/lib/flixel-addons/2,5,0" />
+      <root url="file://C:/HaxeToolkit/haxe/lib/flixel-ui/2,2,0" />
+      <root url="file://C:/HaxeToolkit/haxe/lib/flixel/4,3,0" />
+    </SOURCES>
+  </library>
+</component>
