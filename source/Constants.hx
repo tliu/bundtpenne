@@ -1,3 +1,3 @@
 class Constants {
-    public static var GRAVITY:Float = 350;
+    public static var GRAVITY:Float = 400;
 }

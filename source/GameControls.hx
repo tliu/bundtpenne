@@ -5,5 +5,6 @@ enum GameControls {
     RIGHT;
     BOOST;
     JUMP;
+    SHOOT;
     SLOWTIME;
 }

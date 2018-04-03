@@ -21,5 +21,6 @@ class ControlMapper {
         mapping[GameControls.RIGHT] = FlxKey.RIGHT;
         mapping[GameControls.BOOST] = FlxKey.X;
         mapping[GameControls.SLOWTIME] = FlxKey.Z;
+        mapping[GameControls.SHOOT] = FlxKey.C;
     }
 }
